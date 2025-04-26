@@ -4,49 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Front-End JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
     <header>
-        <img src="/images/logo.png" width="100" alt="Logo Bazar">
-        <h1>Bazar de la Playa</h1>
+        <img class="logo" src="/images/logo_converted.svg"  alt="Logo Bazar">
+        <h1 class="main-title">Bazar de la Playa</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+             <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul class="nav-list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
     <main>
         <section>
-            <!-- <iframe width="600" height="300" src="https://www.youtube.com/embed/hBX5zCK2r_8" title="Multirubro de ONCE - Platos Tazas , decoración y más 🛍✨️✨️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-            <video controls width="40%" muted>
-                <source 
-                    src="/videos/videoBazar.mp4"
-                    type="video/mp4"
+            <div >
+                <video class="video-container" controls muted>
+                    <source 
+                        src="/videos/videoBazar.mp4"
+                        type="video/mp4"
+                    >
+                        <track
+                            src="/videos/subtitulosVideoBazar.vtt"
+                            kind="subtitles"
+                            srclang="es"
+                            label="Español"
+                            default
+                        >
+                        <track
+                            src="/videos/subtitlesVideoBazar.vtt"
+                            kind="subtitles"
+                            srclang="en"
+                            label="English"
+                        >
+                </video>
+            </div>
+            <div >
+                <img class="image-container"
+                    src="/images/coffee-5150540_1280.jpg"
+                    alt="Juego de café"
                 >
-                    <track
-                        src="/videos/subtitulosVideoBazar.vtt"
-                        kind="subtitles"
-                        srclang="es"
-                        label="Español"
-                        default
-                    >
-                    <track
-                        src="/videos/subtitlesVideoBazar.vtt"
-                        kind="subtitles"
-                        srclang="en"
-                        label="English"
-                    >
-            </video> <br>
-            <img
-                src="/images/coffee-5150540_1280.jpg"
-                width="550"
-                alt="Juego de café"
-            >
+            </div>
         </section>
         <form action="https://formspree.io/f/mvgapddj" method="POST">
             <div>
@@ -73,7 +78,16 @@
         </form>
     </main>
     <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1570.690593882439!2d-58.56327613137808!3d-34.64402405297517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e42c7c5ed3%3A0xf7f1ff63b9146e4b!2sEspora%2036%2C%20B1704FAB%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses!2sar!4v1744670862193!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1570.690593882439!2d-58.56327613137808!3d-34.64402405297517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e42c7c5ed3%3A0xf7f1ff63b9146e4b!2sEspora%2036%2C%20B1704FAB%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses!2sar!4v1744670862193!5m2!1ses!2sar"
+            width="200"
+            height="200"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p>© 2025 Bazar de la Playa - Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
