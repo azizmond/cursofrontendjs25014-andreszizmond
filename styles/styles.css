@@ -1,26 +1,14 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
 }
 
-footer{
-    background-color: #f2e3cd;
-}
-
-footer p{
-    color: #a77022;
-    font-family: 'Roboto';
-    font-size: 1.25rem;
-}
+/* Header */
 
 header{
     background-color: #f2e3cd;
-}
-
-.image-container{
-    width: 40%;
 }
 
 .logo{
@@ -33,17 +21,39 @@ header{
     font-size: 3rem;
 }
 
+.nav-menu ul, li{
+    display: inline;
+}
+
 .nav-list{
     list-style: none;
     font-size: 1.25rem;
 }
+
 .nav-list a{
     color: #a77022;
     font-family: 'Roboto';
     text-decoration: none;
 }
 
+/* Body */
+
+.image-container{
+    width: 40%;
+}
+
 .video-container{
     width: 40%;
 }
 
+/* Footer */
+
+footer{
+    background-color: #f2e3cd;
+}
+
+footer p{
+    color: #a77022;
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+}
