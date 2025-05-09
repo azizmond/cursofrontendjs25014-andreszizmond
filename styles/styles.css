@@ -38,6 +38,15 @@ header{
 }
 
 /* Body */
+body {
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.5)),
+                url('../images/coffee-5150540_1280.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }  
 
 .image-container{
     width: 40%;
