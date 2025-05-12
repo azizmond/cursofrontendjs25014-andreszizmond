@@ -27,6 +27,7 @@ header{
 .menu-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-menu ul, li{
