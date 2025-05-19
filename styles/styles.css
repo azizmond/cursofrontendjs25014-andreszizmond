@@ -54,10 +54,30 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-  }  
+  }
+  
+.contactForm{
+    background-color: #f2e3cd;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    height: 18rem;
+    justify-content: center;
+    padding: 2rem;
+}
 
 .image-container{
     width: 40%;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.spacing{
+    padding: .25rem;
 }
 
 .video-container{
