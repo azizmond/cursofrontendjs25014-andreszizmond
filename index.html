@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Front-End JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Fonts -->
      <!-- Fonts - Fredoka -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,10 +59,82 @@
                 </video>
             </div>
             <div >
-                <img class="image-container"
-                    src="/images/mug-8235059_1280.jpg"
-                    alt="Juego de café"
-                >
+                <a id="products"></a>
+                <section class="sections">
+                    <h2>Productos</h2>
+                    <div class="products">
+                        <div class="product">
+                            <img src="images/pan-554072_640.jpg" alt="Sarten">
+                            <div class="product-content">
+                                <h4>Sartén Antiadherente</h4>
+                                <span>$ 45.000</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/panDoble.jpg" alt="Sarten doble">
+                            <div class="product-content">
+                                <h4>Sartén Antiadherente con tapa</h4>
+                                <span>$ 70.000</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/ollaVapor.jpg" alt="Vaporiera">
+                            <div class="product-content">
+                                <h4>Olla tipo Vaporiera</h4>
+                                <span>$ 42.000</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/mugs.jpg" alt="Taza">
+                            <div class="product-content">
+                                <h4>Tazas grandes</h4>
+                                <span>$ 14.000</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/coffeeMugs0.jpg" alt="Tazas café">
+                            <div class="product-content">
+                                <h4>Juego de tazas para café</h4>
+                                <span>$ 25.000</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/pottery-.jpg" alt="Cazuelas">
+                            <div class="product-content">
+                                <h4>Cazuelas de barro</h4>
+                                <span>$ 18.000</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/cutlery.jpg" alt="">
+                            <div class="product-content">
+                                <h4>Cubiertos</h4>
+                                <span>$ 6.000</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/dishesStack.jpg" alt="Platos">
+                            <div class="product-content">
+                                <h4>Platos playos</h4>
+                                <span>$ 8.000</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/glassPattern.png" alt="Vasos estampados">
+                            <div class="product-content">
+                                <h4>Vaso de Vino estampado</h4>
+                                <span>$ 17.000</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/glass-1818398_640.jpg" alt="Copas">
+                            <div class="product-content">
+                                <h4>Copa de Vino Reserva</h4>
+                                <span>$ 15.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
         <form class="contactForm" action="https://formspree.io/f/mvgapddj" method="POST">
@@ -87,22 +161,21 @@
             <button class="button" type="submit">Enviar</button>
         </form>
     </main>
-    <footer>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1570.690593882439!2d-58.56327613137808!3d-34.64402405297517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e42c7c5ed3%3A0xf7f1ff63b9146e4b!2sEspora%2036%2C%20B1704FAB%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses!2sar!4v1744670862193!5m2!1ses!2sar"
-            width="200"
-            height="200"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <p>© 2025 Bazar de la Playa - Todos los derechos reservados.</p>
-        <ul>
-            <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><i class="fa-brands fa-square-facebook"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-        </ul>
+     <footer class="container-fluid mt-5 footer">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 col-12 mt-4">
+                <ul>
+                    <h4 style="color: #a77022; text-align: left;">Mapa del Sitio</h4>
+                    <div class="li mapa"><a style="color: #a77022;" href="#">Inicio</a></div>
+                    <div class="li mapa"><a style="color: #a77022;" href="nosotros.html">Nosotros</a></div>
+                    <div class="li mapa"><a style="color: #a77022;" href="contacto.html">Contacto</a></div>
+                    <div class="li mapa"><a style="color: #a77022;" href="propiedades.html">Propiedades</a></div>
+                </ul>
+            </div>
+            <div class="iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.482810258753!2d-58.57413612678222!3d-34.63902424303268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78be8a280e7%3A0x2e388579b58902c7!2sFarmacia%20en%20Makro!5e0!3m2!1ses-419!2sar!4v1747869762616!5m2!1ses-419!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

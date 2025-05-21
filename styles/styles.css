@@ -6,6 +6,18 @@
     font-family: "Cabin";
 }
 
+h1, h2, h3, h4{
+    font-family: "Fredoka";
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
 /* Header */
 
 header{
@@ -19,7 +31,6 @@ header{
 
 .main-title{
     color: #a77022;
-    font-family: "Fredoka";
     font-size: 3rem;
     font-weight: 500;
 }
@@ -57,7 +68,6 @@ body {
   }
   
 .contactForm{
-    background-color: #f2e3cd;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -76,15 +86,59 @@ main{
     margin: auto;
 }
 
+.products {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.product {
+    background-color: #f2e3cd;
+    width: 16rem;
+    height: 22rem;
+    border: 1px solid #a77022;
+    border-radius: 10px;
+}
+
+.product-content {
+    color: #a77022;
+    padding: 0 .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product img {
+    border-radius: 10px 10px 0 0;
+    width: 15.9rem;
+    height: 13rem;
+    background-color: white;
+}
+
+.sections {
+    margin: 0 10%;
+    padding: 2rem;
+    color: #a77022;
+}
+
 .spacing{
     padding: .25rem;
 }
 
 .video-container{
-    width: 40%;
+    display: flex;
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+    height: 80vh;
 }
 
 /* Footer */
+
+.iframe{
+    display: flex;
+    justify-content: flex-end;
+}
 
 footer{
     background-color: #f2e3cd;
